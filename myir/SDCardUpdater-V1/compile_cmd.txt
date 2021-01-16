@@ -1,0 +1,17 @@
+
+#######################################
+sudo rm *.gz
+
+#sudo find -name *.gz | xargs rm -rf
+
+cd bootfs/
+
+####create boot.scr.uimg
+sudo mkimage -C none -A arm -T script -d boot.scr.cmd boot.scr.uimg
+
+cd ..
+
+sudo ./CreateSDUpdateImage-myir mfgimages qt_stm32mp1
+
+#cp *.gz /mnt/hgfs/share/
+

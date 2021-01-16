@@ -1,0 +1,18 @@
+#########################
+cp -rf $PWD/../build/install_artifact/boot/* /media/$USER/bootfs/
+#########################
+source /opt/st/myir/2.6-snapshot/environment-setup-cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi
+#########################
+cp -rf /opt/myir/MYiR-STM32-kernel/build/install_artifact/boot/* /media/$USER/bootfs/
+#########################
+cd /opt/myir/MYiR-STM32-kernel/build/install_artifact
+#########################
+rm lib/modules/4.19.94/source lib/modules/4.19.94/build 
+#########################
+find . -name "*.ko" | xargs $STRIP --strip-debug --remove-section=.comment --remove-section=.note --preserve-dates
+#########################
+cp -rf lib/modules/* /media/$USER/rootfs/lib/modules/
+
+
+
+

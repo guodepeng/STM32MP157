@@ -1,0 +1,12 @@
+###
+source /opt/st/myir/2.6-snapshot/environment-setup-cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi
+make ARCH=arm O="$PWD/../build" myc-ya157c_defconfig
+make ARCH=arm uImage vmlinux dtbs LOADADDR=0xC2000040 O="$PWD/../build"
+make ARCH=arm modules O="$PWD/../build"
+###
+make ARCH=arm INSTALL_MOD_PATH="$PWD/../build/install_artifact" modules_install O="$PWD/../build"
+mkdir -p $PWD/../build/install_artifact/boot/
+cp $PWD/../build/arch/arm/boot/uImage $PWD/../build/install_artifact/boot/
+cp $PWD/../build/arch/arm/boot/dts/st*.dtb $PWD/../build/install_artifact/boot/
+
+

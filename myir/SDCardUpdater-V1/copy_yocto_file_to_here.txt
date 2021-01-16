@@ -1,0 +1,40 @@
+
+###################copy yocto to bootfs############################
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/stm32mp157c-ya157c-v2.dtb /opt/myir/SDCardUpdater-V1/bootfs/stm32mp157c-ya157c-v2.dtb 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/stm32mp157c-ya157c-hdmi-v2.dtb  /opt/myir/SDCardUpdater-V1/bootfs/stm32mp157c-ya157c-hdmi-v2.dtb 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/stm32mp157c-ya157c-lcd-v2.dtb  /opt/myir/SDCardUpdater-V1/bootfs/stm32mp157c-ya157c-lcd-v2.dtb 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32  /opt/myir/SDCardUpdater-V1/bootfs/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/u-boot-stm32mp157c-ya157c-512d-v2-trusted.stm32  /opt/myir/SDCardUpdater-V1/bootfs/u-boot-stm32mp157c-ya157c-512d-v2-trusted.stm32 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/uImage  /opt/myir/SDCardUpdater-V1/bootfs/uImage 
+
+###################copy yocto mfgimages##########################
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/myir-image-qt-openstlinux-eglfs-myir.ext4  /opt/myir/SDCardUpdater-V1/mfgimages/myir-image-qt-openstlinux-eglfs-myir.ext4 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/st-image-bootfs-openstlinux-eglfs-myir.ext4  /opt/myir/SDCardUpdater-V1/mfgimages/st-image-bootfs-openstlinux-eglfs-myir.ext4 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/st-image-userfs-openstlinux-eglfs-myir.ext4  /opt/myir/SDCardUpdater-V1/mfgimages/st-image-userfs-openstlinux-eglfs-myir.ext4
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/st-image-vendorfs-openstlinux-eglfs-myir.ext4  /opt/myir/SDCardUpdater-V1/mfgimages/st-image-vendorfs-openstlinux-eglfs-myir.ext4 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32  /opt/myir/SDCardUpdater-V1/mfgimages/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32 
+
+sudo \cp /home/gp/yocto/build-openstlinuxeglfs-myir/tmp-glibc/deploy/images/myir/u-boot-stm32mp157c-ya157c-512d-v2-trusted.stm32  /opt/myir/SDCardUpdater-V1/mfgimages/u-boot-stm32mp157c-ya157c-512d-v2-trusted.stm32 
+
+
+
+
+
+
+ 
+
+
+
+
+

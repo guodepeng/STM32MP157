@@ -1,0 +1,20 @@
+
+###################copy yocto to bootfs############################
+
+sudo \cp /opt/myir/MYiR-STM32-kernel/build/install_artifact/boot/uImage  /opt/myir/SDCardUpdater-V1/bootfs/
+sudo \cp /opt/myir/MYiR-STM32-kernel/build/install_artifact/boot/stm32mp157c-ya157c-v2.dtb  /opt/myir/SDCardUpdater-V1/bootfs/
+sudo \cp /opt/myir/MYiR-STM32-kernel/build/install_artifact/boot/stm32mp157c-ya157c-hdmi-v2.dtb  /opt/myir/SDCardUpdater-V1/bootfs/
+sudo \cp /opt/myir/MYiR-STM32-kernel/build/install_artifact/boot/stm32mp157c-ya157c-lcd-v2.dtb  /opt/myir/SDCardUpdater-V1/bootfs/
+sudo \cp /opt/myir/MYiR-STM32-uboot/build-trusted/u-boot.stm32 /opt/myir/SDCardUpdater-V1/bootfs/u-boot-stm32mp157c-ya157c-512d-v2-trusted.stm32
+sudo \cp /opt/myir/MYiR-STM32-tf-a/build/trusted/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32 /opt/myir/SDCardUpdater-V1/bootfs/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32
+
+###################copy yocto mfgimages##########################
+
+sudo \cp /opt/myir/MYiR-STM32-uboot/build-trusted/u-boot.stm32 /opt/myir/SDCardUpdater-V1/mfgimages/u-boot-stm32mp157c-ya157c-512d-v2-trusted.stm32
+sudo \cp /opt/myir/MYiR-STM32-tf-a/build/trusted/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32 /opt/myir/SDCardUpdater-V1/mfgimages/tf-a-stm32mp157c-ya157c-512d-v2-trusted.stm32
+
+
+
+
+
+
